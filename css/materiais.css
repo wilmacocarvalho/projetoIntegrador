@@ -21,7 +21,7 @@ header {
 }
 
 .logo-img {
-    height: 90px;
+    height: 120px;
     width: auto;
 }
 
@@ -186,7 +186,7 @@ section {
 
     padding: 10px 16px;
 
-    border-radius: 5px;
+    border-radius: 10px;
 
     cursor: pointer;
 
