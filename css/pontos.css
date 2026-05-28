@@ -1,30 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body{
-    background-color: hsl(120, 40%, 96%);
-}
-
-.container-section {
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 0px;
-}
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 5%;
-    background-color: #bfe5d8;
+    gap: 50px;
+
+    padding: 20px 5%;
+
+    background-color: #c4e5da;
+
     position: sticky;
     top: 0;
     z-index: 1000;
-    gap: 50px;
 }
 
 .logo {
@@ -34,15 +21,25 @@ header {
 
 .logo-img {
     height: 120px;
+    width: auto;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
+    gap: 20px;
 }
 
-.nav-links li {
-    margin: 0 10px;
+.nav-links li a {
+    text-decoration: none;
+    color: #36702b;
+    font-weight: 600;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
 }
 
 .nav-links a {
@@ -54,8 +51,9 @@ header {
     transition: 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links li a:hover {
     background-color: #66bb6a;
+    color: white;
 }
 
 .search-container {
@@ -227,164 +225,218 @@ header {
     border-radius: 10px;
 }
 
-.rodape-completo {
+.rodape-completo{
     background-color: #1a1a1a;
+
     color: #ffffff;
-    padding: 60px 0 0;
+
+    padding: 45px 0 0;
+
     width: 100%;
-    font-family: sans-serif;
+
+    margin-top: 50px;
 }
 
-.footer-container {
+.footer-container{
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 40px;
 
     max-width: 1200px;
+
     margin: 0 auto;
-    padding: 0 20px;
+
+    padding: 0 20px 35px;
+
     width: 100%;
 }
 
 .footer-col h3,
-.footer-col h4 {
+.footer-col h4{
     color: #4CAF50;
+
     margin-bottom: 20px;
 }
 
-.footer-col ul {
+.footer-col ul{
     list-style: none;
 }
 
-.footer-col ul li {
+.footer-col ul li{
     margin-bottom: 10px;
 }
 
-.footer-col a {
+.footer-col a{
     color: #ccc;
+
     text-decoration: none;
+
     transition: 0.3s;
 }
 
-.footer-col a:hover {
+.footer-col a:hover{
     color: #4CAF50;
+
     padding-left: 5px;
 }
 
-.newsletter-form {
+.newsletter-form{
     display: flex;
+
     gap: 10px;
+
     margin-top: 10px;
 }
 
-.newsletter-form input {
+.newsletter-form input{
     padding: 10px;
+
     border: none;
+
     border-radius: 4px;
+
     width: 100%;
 }
 
-.newsletter-form button {
+.newsletter-form button{
     background-color: #4CAF50;
+
     color: #fff;
+
     border: none;
+
     padding: 10px 15px;
+
     border-radius: 4px;
+
     cursor: pointer;
 }
 
-.footer-bottom {
+.footer-bottom{
     background-color: #527061;
+
     color: #ffffff;
+
     text-align: center;
+
     font-size: 14px;
 
-    margin-top: 40px;
+    margin-top: 25px;
+
     padding: 16px 20px;
+
     border-top: 1px solid #738d76;
 }
 
-.titulo-pagina {
+.titulo-pagina{
     text-align: center;
+
     padding: 40px 20px;
+
     background-color: #ffffff;
 }
 
-.busca {
+.busca{
     display: flex;
+
     justify-content: center;
+
     gap: 10px;
+
     padding: 30px 20px;
+
     flex-wrap: wrap;
 }
 
 .busca input,
-.busca select {
+.busca select{
     padding: 10px;
+
     border-radius: 6px;
+
     border: 1px solid #ccc;
 }
 
-.busca button {
+.busca button{
     background-color: #4CAF50;
+
     color: white;
+
     border: none;
+
     padding: 10px 20px;
+
     border-radius: 6px;
+
     cursor: pointer;
 }
 
-.mapa-container {
+.mapa-container{
     padding: 20px;
 }
 
-#mapa {
+#mapa{
     height: 500px;
+
     border-radius: 10px;
+
     border: 1px solid #ddd;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
-    header {
+    header{
         flex-direction: column;
+
         gap: 15px;
     }
 
-    .nav-links {
+    .nav-links{
         flex-direction: column;
+
         align-items: center;
     }
 
-    .footer-container {
+    .footer-container{
         grid-template-columns: 1fr;
+
         text-align: center;
     }
 
-    .newsletter-form {
+    .newsletter-form{
         flex-direction: column;
+
         align-items: center;
     }
 
     .newsletter-form input,
-    .newsletter-form button {
+    .newsletter-form button{
         max-width: 300px;
+
         width: 100%;
     }
 
-    #mapa {
+    #mapa{
         height: 400px;
     }
 
-    .busca {
+    .busca{
         flex-direction: column;
+
         align-items: center;
     }
 
     .busca input,
     .busca select,
-    .busca button {
+    .busca button{
         width: 100%;
+
         max-width: 300px;
+    }
+
+    .card-grid{
+        grid-template-columns: 1fr;
     }
 }

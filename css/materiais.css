@@ -1,5 +1,4 @@
 
-
 header {
     display: flex;
     justify-content: center;
@@ -35,7 +34,9 @@ header {
     text-decoration: none;
     color: #36702b;
     font-weight: 600;
+
     padding: 8px 12px;
+
     border-radius: 6px;
 
     transition: 0.3s;
@@ -112,128 +113,218 @@ section {
     border-left: 4px solid #ff9800;
 }
 
+.rodape-completo{
+    background-color: #1a1a1a;
 
-
-.rodape-completo {
-    background-color: #111111;
     color: #ffffff;
 
-    padding-top: 60px;
+    padding: 45px 0 0;
 
-    margin-top: 80px;
+    width: 100%;
+
+    margin-top: 50px;
 }
 
-
-.footer-container {
-    max-width: 1200px;
-
-    margin: auto;
-
-    padding: 0 20px 40px;
-
+.footer-container{
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 40px;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 0 20px 35px;
+
+    width: 100%;
 }
 
-
-.footer-col h4 {
+.footer-col h3,
+.footer-col h4{
     color: #4CAF50;
+
     margin-bottom: 20px;
 }
 
-
-.footer-col ul {
+.footer-col ul{
     list-style: none;
 }
 
-.footer-col ul li {
-    margin-bottom: 12px;
+.footer-col ul li{
+    margin-bottom: 10px;
 }
 
-.footer-col a {
-    color: #ffffff;
+.footer-col a{
+    color: #ccc;
+
     text-decoration: none;
 
     transition: 0.3s;
 }
 
-.footer-col a:hover {
+.footer-col a:hover{
     color: #4CAF50;
+
+    padding-left: 5px;
 }
 
-.newsletter-form {
+.newsletter-form{
     display: flex;
+
     gap: 10px;
-    margin-top: 15px;
+
+    margin-top: 10px;
 }
 
-.newsletter-form input {
-    width: 100%;
-
+.newsletter-form input{
     padding: 10px;
 
     border: none;
-    border-radius: 5px;
+
+    border-radius: 4px;
+
+    width: 100%;
 }
 
-.newsletter-form button {
+.newsletter-form button{
     background-color: #4CAF50;
+
+    color: #fff;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.footer-bottom{
+    background-color: #527061;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    margin-top: 25px;
+
+    padding: 16px 20px;
+
+    border-top: 1px solid #738d76;
+}
+
+.titulo-pagina{
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background-color: #ffffff;
+}
+
+.busca{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 30px 20px;
+
+    flex-wrap: wrap;
+}
+
+.busca input,
+.busca select{
+    padding: 10px;
+
+    border-radius: 6px;
+
+    border: 1px solid #ccc;
+}
+
+.busca button{
+    background-color: #4CAF50;
+
     color: white;
 
     border: none;
 
-    padding: 10px 16px;
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.mapa-container{
+    padding: 20px;
+}
+
+#mapa{
+    height: 500px;
 
     border-radius: 10px;
 
-    cursor: pointer;
-
-    transition: 0.3s;
+    border: 1px solid #ddd;
 }
 
-.newsletter-form button:hover {
-    background-color: #43a047;
-}
+@media (max-width: 768px){
 
-.footer-bottom {
-    background-color: #527061;
-
-    text-align: center;
-
-    padding: 16px;
-
-    font-size: 14px;
-
-    margin-top: 20px;
-}
-
-@media (max-width: 900px) {
-
-    header {
+    header{
         flex-direction: column;
+
+        gap: 15px;
     }
 
-    .nav-links {
+    .nav-links{
         flex-direction: column;
+
         align-items: center;
     }
 
-    .card-grid {
+    .footer-container{
         grid-template-columns: 1fr;
-    }
 
-    .footer-container {
-        grid-template-columns: 1fr;
         text-align: center;
     }
 
-    .newsletter-form {
+    .newsletter-form{
         flex-direction: column;
+
+        align-items: center;
     }
 
-    .titulo-sessao {
-        font-size: 1.7rem;
+    .newsletter-form input,
+    .newsletter-form button{
+        max-width: 300px;
+
+        width: 100%;
+    }
+
+    #mapa{
+        height: 400px;
+    }
+
+    .busca{
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .busca input,
+    .busca select,
+    .busca button{
+        width: 100%;
+
+        max-width: 300px;
+    }
+
+    .card-grid{
+        grid-template-columns: 1fr;
     }
 }

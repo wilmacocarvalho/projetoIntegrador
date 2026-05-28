@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pontos de Coleta - Recicla Tech</title>
-
+    <title>Recicla Tech</title>
     <link rel="stylesheet" href="../css/pontos.css">
-
     <link rel="stylesheet"
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
@@ -17,7 +14,7 @@
 <header>
 
     <div class="logo">
-        <a href="../html/index.html">
+        <a href="index.html">
             <img src="../Projeto Integrador/img/logo.png" class="logo-img">
         </a>
     </div>
@@ -28,6 +25,7 @@
             <li><a href="../html/sobre.html">Sobre</a></li>
             <li><a href="../html/materiais.html">Materiais</a></li>
             <li><a href="../html/pontos.html">Pontos de Coleta</a></li>
+            <li><a href="../html/doacaes.html">Doações</a></li>
         </ul>
     </nav>
 
@@ -67,12 +65,12 @@
     <p id="status"></p>
 </section>
 
-<!-- MAPA -->
+
 <section class="mapa-container">
     <div id="mapa" style="height: 600px;"></div>
 </section>
 
-<!-- RODAPÉ -->
+
 <footer class="rodape-completo">
 
     <div class="footer-container">
@@ -115,14 +113,9 @@
 
 </footer>
 
-<!-- LEAFLET -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <script>
-
-    // =========================
-    // MAPA
-    // =========================
 
     let mapa = L.map('mapa').setView([-19.9167, -43.9345], 11);
 
