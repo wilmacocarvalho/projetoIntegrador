@@ -84,10 +84,6 @@ header{
     color: white;
 }
 
-/* =========================
-   HERO
-========================= */
-
 .hero-doacoes{
     background: linear-gradient(to right, #c4e5da, #edf8f2);
 
@@ -146,9 +142,6 @@ header{
     transform: translateY(-3px);
 }
 
-/* =========================
-   FILTROS
-========================= */
 
 .filtros-doacao{
     display: flex;
